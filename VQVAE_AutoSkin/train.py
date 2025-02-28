@@ -279,7 +279,7 @@ def build_things_from_args(args: arg_util.Args):
         if isinstance(sys.stdout, dist.BackupStreamToFile) and isinstance(sys.stderr, dist.BackupStreamToFile):
             sys.stdout.close(), sys.stderr.close()
         exit(0)
-    vis_dir, vis_file = '/data/wangyuchen/VQVQE/output/_vis_cached', f'{"vae_mine"}_8x{args.img_size}.pth'
+    vis_dir, vis_file = 
     
     vis_path = os.path.join(vis_dir, vis_file)
     
