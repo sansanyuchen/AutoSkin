@@ -347,7 +347,7 @@ if __name__ == '__main__':
         for _ in range(len(key_layers) + 1)
     ])
     
-    ckpt = os.path.join(os.path.dirname(__file__), '/mnt/bn/foundation-lq/tiankeyu/ckpt_vae/vit_small_patch16_224.pth')
+    ckpt = os.path.join(os.path.dirname(__file__), '')
 
     DinoDisc.forward
     dd = DinoDisc('cpu', dino_ckpt_path=ckpt, ks=ks, norm_type=norm_type, norm_eps=norm_eps, key_depths=key_layers)
